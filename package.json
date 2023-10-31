@@ -29,7 +29,7 @@
 		"lint": "prettier --check . --config ../../.prettierrc --ignore-path .gitignore",
 		"format": "pnpm lint --write",
 		"check": "tsc --skipLibCheck",
-		"prepublishOnly": "pnpm build"
+		"postinstall": "pnpm build"
 	},
 	"dependencies": {
 		"@cloudflare/workers-types": "^4.20230404.0",
